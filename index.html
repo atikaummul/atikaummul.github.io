@@ -1,83 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
-    <style>
-        .menu ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
-        }
-        
-        .menu li {
-          float: left;
-        }
-        
-        .menu li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        .menu li a:hover {
-          background-color: #111;
-        }
-        </style>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Profile</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-    <style>
-        body
-        {
-            background-color: #f2f24e;
-            padding-top: 10px;
-            padding-bottom: 60px;
-            font-family: Cursive ;
-        }
-        h1{
-        color: rgb(0, 0, 0);
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-        text-align: center;
-    }
-    </style>
-    
-<body>
-    <div class="menu">
-        <ul>
-            <li><a href="#">Biodata</a></li>
-            <li><a href="portofolio.html">Portofolio</a></li>
-        </ul>
-    </div>
-    
-    <h1>Atika Ummul Azizia</h1>
-    <img src="atika.jpg" width="250" height="250" style="display:block; margin:auto;" >
-    <h2>Tentang Saya</h2>
-    <p>Atika Ummul Azizia, mahasiswa program studi Sistem Informasi Universitas jember tahun 2020. Saya adalah individu yang memiliki antusias, motivasi, semangat dan komitmen yang tinggi serta disiplin waktu. Saya memiliki kemampuan analisis yang cukup baik dan teliti dalam mengerjakan suatu pekerjaan. Saya seringkali mendapatkan peran sebagai system analyst serta project management dalam menyelesaikan proyek. Aktif dalam organisasi Badan Eksekutif Mahasiswa (BEM) Fakultas Ilmu Komputer Universitas Jember dan tim jurnalisme fakultas selama kuliah, serta berhasil meraih IPK 3.85.  Senang bekerja sama dengan tim dan memiliki komunikasi yang baik. </p>
-   
-    <h2>Keahlian Saya</h2>
-    <ol>
-        <li>Public Speaking</li>
-        <li>Project Management</li>
-        <li>System Analyst</li>
-    </ol>
 
-    <h2>Pendidikan Saya</h2>
-    <ul>
-        <li>2007-2014 : SDN Tanggul Wetan 4</li>
-        <li>2014-2017 : SMPN 4 Tanggul</li>
-        <li>2017-2020 : SMAN 2 Tanggul</li>
-        <li>2020-sekarang : Universitas Jember</li>
-    </ul>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light shadow sticky-top">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link fw-bolder text-dark" aria-current="page" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder text-dark" aria-current="page" href="#skill">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder text-dark" aria-current="page" href="portofolio.html">Portofolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bolder text-dark" aria-current="page" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-    <h2>Kontak Saya</h2>
-    <a href="https://www.instagram.com/atika_ua/">Instagram | </a>
-    <a href="https://www.linkedin.com/in/atika-ummul-azizia-521a3820a/"> Linkedin | </a>
-    <a href="https://github.com/atikaummul/web-basic-seal/blob/html_element/portofolio.html"> Portofolio  | </a>
-    
-</body>
+      <!--Hero-->
+      <div id="atika" class="container d-flex flex-column align-items-center justify-content-center mb-5">
+        <img src="./assets/image/atika-poto.jpg" class="image-atika rounded-circle" alt="">
+        <h1>Atika Ummul Azizia</h1>
+        <p class="subtitle">Information Systems </p>
+        <p class="subtitle">University of Jember</p>
+        <i class="bi bi-arrow-down"></i>
+      </div>
+
+      <!--About Me-->
+      <div id="about" class="container mb-5">
+        <h2 class="text-center mb-3">About Me <i class="bi bi-mortarboard-fill"></i></h2>
+        <div class="row">
+          <div class="col-6">
+            <img src="./assets/image/image-about.jpeg" class="shadow rounded w-100" alt="">
+          </div>
+          <div class="col-6">
+            <p class="text-about text-secondary">Halo, saya Atika Ummul Azizia, mahasiswa program studi Sistem Informasi Universitas jember tahun 2020. Saya adalah individu yang memiliki antusias, motivasi, semangat dan komitmen yang tinggi serta disiplin waktu. Saya memiliki kemampuan analisis yang cukup baik dan teliti dalam mengerjakan suatu pekerjaan. Saya seringkali mendapatkan peran sebagai system analyst serta project management dalam menyelesaikan proyek. Aktif dalam organisasi Badan Eksekutif Mahasiswa (BEM) Fakultas Ilmu Komputer Universitas Jember dan tim jurnalisme fakultas selama kuliah.  Senang bekerja sama dengan tim dan memiliki komunikasi yang baik. </p>
+        </div>
+      </div>
+      </div>
+
+      <!--Skill-->
+      <div id="skill" class="container mb-5">
+        <h2 class="text-center mb-3">Skills <i class="bi bi-star-fill"></i></h2>
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <img src="./assets/image/about-1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Computer Skill</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Microsoft Word</li>
+                <li class="list-group-item">Microsoft Excel</li>
+                <li class="list-group-item">Microsoft Powerpoint</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="./assets/image/about-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Design Skill</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">UX/UI design</li>
+                <li class="list-group-item">Canva</li>
+                <li class="list-group-item">Enterprise Architecture</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="./assets/image/about-3.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Communication Skill</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Presentation skills</li>
+                <li class="list-group-item">Verbal communication</li>
+                <li class="list-group-item">Written communication</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="./assets/image/about-4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Problem Solving Skills</h5>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Analysis</li>
+                <li class="list-group-item">Logical Reasoning</li>
+                <li class="list-group-item">Observation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--Contact Me-->
+      <div id="contact" class="container mb-5">
+        <h2 class="text-center mb-3">Contact</h2>
+        <form class="col-6 mx-auto">
+        <h6>You can reach me at :</h6>
+        <div><i class="bi bi-envelope-fill">&nbsp;&nbsp;atikaummul02@gmail.com</i></div>
+        <i class="bi bi-telephone-fill">&nbsp;&nbsp;0857 7081 4539</i>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Example textarea</label>
+            <textarea type="text" class="form-control" id="exampleFormControlInput1" rows="3"></textarea>
+          </div>
+          <button type="button" class="btn btn-primary w-100">Submit</button>
+        </form>
+      </div>
+
+      <!--footer-->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-muted">&copy; 2022 Company, Inc</span>
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-twitter"></i></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-instagram"></i></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><i class="bi bi-facebook"></i></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
 </html>
